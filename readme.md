@@ -1,1 +1,1 @@
-{\rtf1}
+**Tulika Dutta Personal Website**
