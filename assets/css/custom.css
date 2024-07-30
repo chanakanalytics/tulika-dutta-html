@@ -1,0 +1,8 @@
+.comapny_works img{
+    height: 30px !important
+}
+.banner_text_wrapper h1 span{
+    font-style: italic;
+   -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
