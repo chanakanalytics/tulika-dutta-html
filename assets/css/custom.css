@@ -6,3 +6,24 @@
    -webkit-text-stroke: 1px;
     -webkit-text-fill-color: transparent;
 }
+
+.contact-form input, .contact-form textarea{
+    background-color: #EDEDED;
+    border-radius: 30px;
+}
+.section-contact-form.home_page{
+    padding-bottom: 80px;
+}
+.top-social-media{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+}
+.top-social-media ul li{
+    list-style: none;
+}
+.top-social-media ul li a{
+   color: #fff;
+   font-size: 25px;
+}

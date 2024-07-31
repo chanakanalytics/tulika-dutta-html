@@ -9688,8 +9688,10 @@ body {
     margin-top: 20px
 }
 
-.header-1 .navbar-nav {
-    background: rgb(0 0 0 / 28%)
+.header-1 .header-bg{
+    background: rgb(0 0 0 / 28%);
+    border-radius: 85px;
+    position: relative;
 }
 
 .header-1 .navbar-nav li:first-child a{
@@ -9966,8 +9968,8 @@ body {
 
 .architronix-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 20px;
-    --bs-nav-link-padding-x: 28px;
-    --bs-nav-link-padding-y: 24px;
+    --bs-nav-link-padding-x: 24px;
+    --bs-nav-link-padding-y: 20px;
     --bs-navbar-active-color: var(--bs-secondary);
 }
 
@@ -9985,7 +9987,7 @@ body {
     .architronix-nav .nav-link {
         --bs-navbar-nav-link-padding-x: 24px;
         --bs-nav-link-padding-x: 24px;
-        --bs-nav-link-padding-y: 30px;
+        --bs-nav-link-padding-y: 25px;
     }
 }
 
@@ -11219,6 +11221,23 @@ body {
 .project-contents .project-image img{
      border-radius: 30px;
 }
+.project-info{
+    background: var(--bs-primary);
+    border-radius: 30px;
+}
+.project-info h4{
+    font-size: 60px;
+    text-transform: uppercase;
+    color:#253B2F;
+    opacity: 0.2;
+    font-weight: 700;
+}
+.project-info h5{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
 
 @media (max-width: 991.98px) {
     .project-contents .project-image {
@@ -11236,7 +11255,7 @@ body {
 .project-contents .project-info {
     --bs-link-color-rgb: var(--bs-secondary);
     --bs-link-hover-color-rgb: var(--bs-secondary);
-    padding: var(--bs-project-info-padding);
+    padding: 60px 50px;
     width: var(--bs-project-info-width);
     position: absolute;
     left: var(--bs-project-info-left-spacing);
@@ -11249,9 +11268,6 @@ body {
     animation: fadeInUpBig 3s;
 }
 
-.project-contents .project-info p {
-    max-width: 410px;
-}
 
 .project-contents .project-title {
     font-size: var(--bs-project-title-font-size);
@@ -11791,6 +11807,11 @@ body {
     .section-blog-single {
         padding-top: 50px;
     }
+}
+
+.blog-image{
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .blog-single-text {
