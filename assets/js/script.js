@@ -60,7 +60,7 @@
   // =======Swiper .service-swiper========>>>>>
   if ($('.service-swiper').length > 0) {
     new Swiper(".service-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       slidesPerGroup: 1,
       breakpoints: {
@@ -94,7 +94,7 @@
   // =======Swiper .shop-2-swiper========>>>>>
   if ($('.weight-management-swiper').length > 0) {
     new Swiper(".weight-management-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       centeredSlides: true,
       slidesPerGroup: 1,
@@ -123,7 +123,7 @@
 
   if ($('.shop-swiper').length > 0) {
     new Swiper(".shop-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       slidesPerGroup: 1,
       breakpoints: {
@@ -154,11 +154,11 @@
     });
   }
   // =======Swiper .shop-swiper========>>>>>
-    
-    
-      if ($('.organization-swiper').length > 0) {
+
+
+  if ($('.organization-swiper').length > 0) {
     new Swiper(".organization-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       slidesPerGroup: 1,
       breakpoints: {
@@ -194,7 +194,7 @@
   // =======Swiper .blog-swiper========>>>>>
   if ($('.blog-swiper').length > 0) {
     new Swiper(".blog-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       slidesPerGroup: 1,
       breakpoints: {
@@ -221,10 +221,41 @@
   // =======Swiper .blog-swiper========>>>>>
 
 
+
+  // =======Swiper .client-slider========>>>>>
+  if ($('.client-slider').length > 0) {
+    new Swiper(".client-slider", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      breakpoints: {
+        380: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 4,
+        }
+      },
+      pagination: {
+        el: ".client-slider-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".progress-button-next",
+        prevEl: ".progress-button-prev",
+      },
+    });
+  }
+  // =======Swiper .client-slider========>>>>>
+
+
   // =======Swiper .testimonial-swiper========>>>>>
   if ($('.testimonial-swiper').length > 0) {
     new Swiper(".testimonial-swiper", {
-      loop: true,      
+      loop: true,
       spaceBetween: 20,
       breakpoints: {
         380: {
@@ -478,36 +509,36 @@
   if ($('#map').length > 0) {
     var map = L.map('map').setView([35.76428892315803, -40.45770338684278], 3);
     var locationsArray = [];
-  
+
     function clickZoom(e) {
       map.setView(e.target.getLatLng(), 16);
     }
-  
-    $.each(architronixLocations, function(index, location) {
+
+    $.each(architronixLocations, function (index, location) {
       // Create Marker
       var marker = L.marker(location.markerPoint, {
         title: location.title,
         className: "marker-usa"  // Class for the marker
       }).addTo(map);
-  
+
       // Bind Popup
       marker.bindPopup(`<div class="card card-map architronix-map-card"><div class="card-body">
                           <h5 class="card-title service-title">${location.title}</h5><p class="mb-0 fw-semibold">${location.subtitle}</p><p class="mb-0 contact-home">${location.address}</p>                          
                         </div></div>`).on('click', clickZoom);
-  
+
       // Store the location in the array
       locationsArray.push({ marker: marker, location: location });
     });
-  
 
-    
-     // Handle external link clicks
-    $('.btn-map-direction').on('click', function(e) {
+
+
+    // Handle external link clicks
+    $('.btn-map-direction').on('click', function (e) {
       e.preventDefault();
       var markerTitle = $(this).data('title');
-      
+
       // Find the marker in the array based on the title
-      var selectedMarker = locationsArray.find(function(item) {
+      var selectedMarker = locationsArray.find(function (item) {
         return item.location.title === markerTitle;
       });
 
@@ -518,17 +549,17 @@
         map.setView(selectedMarker.marker.getLatLng(), 12);
       }
     });
-  
+
     L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
       maxZoom: 26,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-  
+
     // Outside click event
-    $(document).on('click', function(e) {
+    $(document).on('click', function (e) {
       var mapContainer = $('#map');
-      var isClickInsideMap = mapContainer.has(e.target).length > 0 || mapContainer.is(e.target); 
-     
+      var isClickInsideMap = mapContainer.has(e.target).length > 0 || mapContainer.is(e.target);
+
     });
   }
   // =========Leaflet map=========>>>>>
@@ -537,7 +568,7 @@
 
   // ========= Scrool stroke-text on Mouse-Wheel=========>>>>>
 
-  if ($('.scroll-move').length > 0){
+  if ($('.scroll-move').length > 0) {
     // const classNames = [];
     // $(".scroll-move").each(function (index, item) {
     //   index += 1;
@@ -598,7 +629,7 @@
           // Check if scroll top is 0
           if (tlH === 0) {
             elemts.css({
-              "transform": "translateX("+ divid + ")",
+              "transform": "translateX(" + divid + ")",
             });
           } else {
             let i = tlH - elOffsetTop,
@@ -607,7 +638,7 @@
               img_scroll = scroll_slow * divid / 150;
             elemts.css({
               "transform": "translateX(" + img_scroll + "px)",
-            });           
+            });
           }
         }
       });
@@ -618,99 +649,99 @@
 
 
   // ========= Stroke-animation When visible on view-port=========>>>>>
-  if ($('.stroke-heading').length > 0){
+  if ($('.stroke-heading').length > 0) {
     $(document).ready(function () {
       function isInViewport(element) {
-          var elementTop = $(element).offset().top;
-          var elementBottom = elementTop + $(element).outerHeight();
-          var viewportTop = $(window).scrollTop();
-          var viewportBottom = viewportTop + $(window).height();
+        var elementTop = $(element).offset().top;
+        var elementBottom = elementTop + $(element).outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
 
-          return elementBottom > viewportTop && elementTop < viewportBottom;
+        return elementBottom > viewportTop && elementTop < viewportBottom;
       }
       function handleVisibility() {
-          $(".stroke-heading , .stroke-heading-2").each(function (i, listItem) {
-              if (isInViewport(listItem)) {
-                  $(listItem).find('.text-line-2').addClass('text-line-animation');
-              } else {
-                  $(listItem).find('.text-line-2').removeClass('text-line-animation');
-              }
-          });
-      }      
-      handleVisibility();      
+        $(".stroke-heading , .stroke-heading-2").each(function (i, listItem) {
+          if (isInViewport(listItem)) {
+            $(listItem).find('.text-line-2').addClass('text-line-animation');
+          } else {
+            $(listItem).find('.text-line-2').removeClass('text-line-animation');
+          }
+        });
+      }
+      handleVisibility();
       $(window).on("scroll", handleVisibility);
     });
-  }    
+  }
   // ========= Stroke-animation When visible on view-port=========>>>>>
 
 
 
   // ========= Team-Wrapper hover=========>>>>>
-  if ($('.team-wrapper').length > 0){
-      $(document).ready(function () {
-        $(".team-wrapper").hover(
-            function () {
-                $(this).find('.author-name').addClass('author-border-bottom');
-            },
-            function () {
-                $(this).find('.author-name').removeClass('author-border-bottom');
-            }
-        );
+  if ($('.team-wrapper').length > 0) {
+    $(document).ready(function () {
+      $(".team-wrapper").hover(
+        function () {
+          $(this).find('.author-name').addClass('author-border-bottom');
+        },
+        function () {
+          $(this).find('.author-name').removeClass('author-border-bottom');
+        }
+      );
     });
   }
   // ========= Team-Wrapper hover=========>>>>>
-  
-
-
-//===============smooth scrolling ===================
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-  direction: 'vertical', // vertical, horizontal
-  gestureDirection: 'vertical', // vertical, horizontal, both
-  smooth: true,
-  mouseMultiplier: 2,
-  smoothTouch: false,
-  touchMultiplier: 2,
-  infinite: false,
-})
 
 
 
-function raf(time) {
-  lenis.raf(time)
+  //===============smooth scrolling ===================
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    direction: 'vertical', // vertical, horizontal
+    gestureDirection: 'vertical', // vertical, horizontal, both
+    smooth: true,
+    mouseMultiplier: 2,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    infinite: false,
+  })
+
+
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
   requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
 
 
-// =================  typed text =============
+  // =================  typed text =============
 
-if ($('.typed-text').length > 0){
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    loop: true,
-    typeSpeed: 30,
-    backSpeed: 10,
-    backDelay: 1500,
-    cursorChar: '_'
-  });
-}
+  if ($('.typed-text').length > 0) {
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      loop: true,
+      typeSpeed: 30,
+      backSpeed: 10,
+      backDelay: 1500,
+      cursorChar: '_'
+    });
+  }
 
 
-new WOW().init();
+  new WOW().init();
 
 
 
-  $(document).on('submit', '#contactForm, #callRequestForm, #downloadForm',function(e) {
+  $(document).on('submit', '#contactForm, #callRequestForm, #downloadForm', function (e) {
     e.preventDefault();
 
     var form = $(this);
     var formData = form.serialize();
     var responseDiv = form.find('.response');
-    form.find('[type="submit"]').prop('disabled', true); 
-    formData += '&id='+form.attr('id');
+    form.find('[type="submit"]').prop('disabled', true);
+    formData += '&id=' + form.attr('id');
 
     responseDiv.html('<p>Working....</p>');
 
@@ -718,43 +749,43 @@ new WOW().init();
       type: 'POST',
       url: 'mail.php',
       data: formData,
-      success: function(response) {
-       var data = JSON.parse(response);
+      success: function (response) {
+        var data = JSON.parse(response);
         if (data.error) {
-          responseDiv.empty().html('<div class="alert alert-error">'+data.msg+'</div>');
+          responseDiv.empty().html('<div class="alert alert-error">' + data.msg + '</div>');
           // You can add additional actions for success here
         } else {
-          responseDiv.empty().html('<div class="alert alert-sucess">'+data.msg+'</div>');
+          responseDiv.empty().html('<div class="alert alert-sucess">' + data.msg + '</div>');
           form.get(0).reset();
         }
-        form.find('[type="submit"]').prop('disabled', false); 
+        form.find('[type="submit"]').prop('disabled', false);
       },
-      error: function(error) {
+      error: function (error) {
         console.log('Error:', error);
-        form.find('[type="submit"]').prop('disabled', false); 
+        form.find('[type="submit"]').prop('disabled', false);
       }
     });
   });
 
 
   // =================  Back-To-Top =============
-  if ($('.progressCounter').length > 0){
+  if ($('.progressCounter').length > 0) {
     $(".progressCounter").progressScroll();
     $(".progressCounter").on("click", function () {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
     });
-    $(document).ready(function() {
+    $(document).ready(function () {
       var progressElements = $('.progressScroll');
-      $(window).scroll(function() {
-          // Check if the scroll position is greater than or equal to 50px
-          if ($(this).scrollTop() >= 50) {
-              // Add class 'progress-scroll-opacity-1' with smooth fadeIn animation
-              progressElements.addClass('progress-scroll-opacity-1');
-          } else {
-              // Remove class 'progress-scroll-opacity-1' with smooth fadeOut animation
-              progressElements.removeClass('progress-scroll-opacity-1');
-          }
+      $(window).scroll(function () {
+        // Check if the scroll position is greater than or equal to 50px
+        if ($(this).scrollTop() >= 50) {
+          // Add class 'progress-scroll-opacity-1' with smooth fadeIn animation
+          progressElements.addClass('progress-scroll-opacity-1');
+        } else {
+          // Remove class 'progress-scroll-opacity-1' with smooth fadeOut animation
+          progressElements.removeClass('progress-scroll-opacity-1');
+        }
       });
     });
   }
@@ -762,42 +793,42 @@ new WOW().init();
 
 
   // =================  Coustomizer closing =============
-  if ($('[data-toggle="tooltip"]').length > 0){
+  if ($('[data-toggle="tooltip"]').length > 0) {
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip({delay: { "show": 300, "hide": 300 }})
+      $('[data-toggle="tooltip"]').tooltip({ delay: { "show": 300, "hide": 300 } })
     })
   }
   // =================  Coustomizer closing =============
-  
+
 
 
 })(jQuery);
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // make it as accordion for smaller screens
-    if (window.innerWidth > 992) {
-        document.querySelectorAll('.hover-menu .nav-item.dropdown').forEach(function (everyitem) {
-            everyitem.addEventListener('mouseover', function (e) {
-                let el_link = this.querySelector('a[data-bs-toggle]');
-                if (el_link !== null) {
-                    let nextEl = el_link.nextElementSibling;
-                    el_link.classList.add('show');
-                    if (nextEl !== null && this.contains(nextEl)) {
-                        nextEl.classList.add('show');
-                    }
-                }
-            }.bind(everyitem)); // Explicitly bind the context to the current element
-            everyitem.addEventListener('mouseleave', function (e) {
-                let el_link = this.querySelector('a[data-bs-toggle]');
-                if (el_link !== null) {
-                    let nextEl = el_link.nextElementSibling;
-                    if (nextEl !== null && this.contains(nextEl)) {
-                        el_link.classList.remove('show');
-                        nextEl.classList.remove('show');
-                    }
-                }
-            }.bind(everyitem)); // Explicitly bind the context to the current element
-        });
-    }
-    // end if innerWidth
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  // make it as accordion for smaller screens
+  if (window.innerWidth > 992) {
+    document.querySelectorAll('.hover-menu .nav-item.dropdown').forEach(function (everyitem) {
+      everyitem.addEventListener('mouseover', function (e) {
+        let el_link = this.querySelector('a[data-bs-toggle]');
+        if (el_link !== null) {
+          let nextEl = el_link.nextElementSibling;
+          el_link.classList.add('show');
+          if (nextEl !== null && this.contains(nextEl)) {
+            nextEl.classList.add('show');
+          }
+        }
+      }.bind(everyitem)); // Explicitly bind the context to the current element
+      everyitem.addEventListener('mouseleave', function (e) {
+        let el_link = this.querySelector('a[data-bs-toggle]');
+        if (el_link !== null) {
+          let nextEl = el_link.nextElementSibling;
+          if (nextEl !== null && this.contains(nextEl)) {
+            el_link.classList.remove('show');
+            nextEl.classList.remove('show');
+          }
+        }
+      }.bind(everyitem)); // Explicitly bind the context to the current element
+    });
+  }
+  // end if innerWidth
+});

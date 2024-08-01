@@ -652,7 +652,7 @@ progress {
 
 @media (min-width: 1200px) {
     .display-1 {
-        font-size: 20.25rem;
+        font-size: 250px;
     }
 }
 
@@ -8811,7 +8811,7 @@ body {
     }
 
     .display-3 {
-        font-size: 54px;
+        font-size: 40px;
     }
 
     .heading-title {
@@ -9689,7 +9689,7 @@ body {
 }
 
 .header-1 .header-bg{
-    background: rgb(0 0 0 / 28%);
+    background: rgb(0 0 0 / 40%);
     border-radius: 85px;
     position: relative;
 }
@@ -10099,7 +10099,7 @@ body {
 
 @media (max-width: 400px) {
     .about-bg {
-        --bs-about-bg-margin-top: 460px;
+        --bs-about-bg-margin-top: 0px;
     }
 
     .about-image {
@@ -11490,7 +11490,7 @@ body {
     }
 
     #projectSlider .carousel-inner {
-        padding-bottom: 420px;
+        padding-bottom: 510px;
     }
 }
 
@@ -11642,26 +11642,14 @@ body {
 }
 
 .project-overview-details {
-    --bs-project-overview-padding: 80px 120px 40px 63px;
     --bs-project-overview-description-margin: 40px;
     --bs-project-overview-list-margin: 30px;
     --bs-project-overview-list-span-width: 210px;
-    padding: var(--bs-project-overview-padding);
+    padding: 70px;
     position: relative;
     z-index: 3;
 }
 
-.project-overview-details .project-overview-description {
-    margin-top: var(--bs-project-overview-description-margin);
-}
-
-.project-overview-details .project-overview-list {
-    margin-top: var(--bs-project-overview-list-margin);
-}
-
-.project-overview-details .project-overview-list li span {
-    width: var(--bs-project-overview-list-span-width);
-}
 
 @media (max-width: 1399.98px) {
     .project-overview-details {
@@ -12669,7 +12657,7 @@ svg {
 
 @media (max-width: 575.98px) {
     .subtitle {
-        font-size: 22px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -12939,9 +12927,7 @@ svg {
 }
 
 .footer-contents {
-    --bs-footer-contents-padding: 100px 0 80px 0;
-    padding: var(--bs-footer-contents-padding);
-    border-bottom: 1px solid var(--bs-border-color);
+    padding: 60px 0 60px 0;
 }
 
 @media (max-width: 991.98px) {
@@ -17473,7 +17459,7 @@ textarea {
 
 .bg-secondary {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity));
+    background-color: #EEF0E5;
 }
 
 .bg-success {
@@ -17963,7 +17949,7 @@ textarea {
 }
 
 .stroke-width-1 {
-    --bs-stroke-width: 1px;
+    --bs-stroke-width: 2px;
 }
 
 .stroke-width-2 {
