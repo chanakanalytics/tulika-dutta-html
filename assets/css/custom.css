@@ -161,9 +161,50 @@ ul{
     margin-bottom: 40px;
     display: inline-block;
 }
+.contact_box_info span{
+    font-size: 20px;
+}
+.contact_box_info h4{
+    font-size: 30px;
+}
+.single_contact_box{
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #253B2F;
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_box_icon{
+    margin-bottom: 25px;
+}
 
+.overview_cont_2 ul li{
+    margin-bottom: 15px;
+    list-style: disc;
+}
 
+.overview_cont_2 ul{
+    padding-left: 10px;
+}
+.bg{
+    background-color: #EEF0E5;
+}
+.bg-dark{
+    background-color: #253B2F;
+}
 
+.mt-80n{
+    margin-top: -80px;
+}
+
+.bg-dark .text-stroke{
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.315);
+}
 
 
 
@@ -249,6 +290,28 @@ ul{
     }
     .contact-form {
         margin-top: 20px;
+    }
+    .connect_me_title span{
+        font-size: 50px;
+    }
+    .social_btn a span{
+        display: none;
+    }
+    .social_btn a{
+        padding: 10px 15px;
+    }
+    .connect_me_section  .pt-60{
+        padding-top: 30px;
+    }
+    .single_contact_box{
+        margin-bottom: 15px;
+        min-height: auto;
+    }
+    .contact_box_info h4{
+        font-size: 24px;
+    }
+    .contact_box_icon img{
+        width: 70px;
     }
     
     

@@ -90,6 +90,38 @@
   // =======Swiper .service-swiper========>>>>>
 
 
+  // =======Swiper .inner-service-swiper========>>>>>
+  if ($('.inner-service-swiper').length > 0) {
+    new Swiper(".inner-service-swiper", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      breakpoints: {
+        380: {
+          slidesPerView: 1,
+        },
+        460: {
+          slidesPerView: 2,
+        },
+        900: {
+          slidesPerView: 3,
+        },
+        1320: {
+          slidesPerView: 4,
+        }
+      },
+      pagination: {
+        el: ".inner-service-swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".progress-button-next",
+        prevEl: ".progress-button-prev",
+      },
+    });
+  }
+  // =======Swiper .service-swiper========>>>>>
+
 
   // =======Swiper .shop-2-swiper========>>>>>
   if ($('.weight-management-swiper').length > 0) {
