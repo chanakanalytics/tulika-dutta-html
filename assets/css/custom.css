@@ -1,95 +1,114 @@
-
-li{
+li {
     list-style: none;
 }
-ul{
+
+ul {
     padding-left: 0;
 }
-.comapny_works img{
+
+.comapny_works img {
     height: 30px !important
 }
-.banner_text_wrapper h1 span{
+
+.banner_text_wrapper h1 span {
     font-style: italic;
-   -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 1px;
     -webkit-text-fill-color: transparent;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input,
+.contact-form textarea {
     background-color: #EDEDED;
     border-radius: 30px;
 }
-.section-contact-form.home_page{
+
+.section-contact-form.home_page {
     padding-bottom: 80px;
 }
-.top-social-media{
+
+.top-social-media {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translate(-50%, -50%);
 }
-.top-social-media ul li{
+
+.top-social-media ul li {
     list-style: none;
 }
-.top-social-media ul li a{
-   color: #fff;
-   font-size: 25px;
+
+.top-social-media ul li a {
+    color: #fff;
+    font-size: 25px;
 }
-.gradient_title{
+
+.gradient_title {
     background: linear-gradient(134deg, #086cf4 0%, #01f3b0 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.abt_page_cont h5{
+
+.abt_page_cont h5 {
     color: #253B2F;
     margin-bottom: 25px;
     font-size: 60px;
 }
-.abt_page_cont p{
+
+.abt_page_cont p {
     line-height: 40px;
     color: #253B2F;
 }
-.about-image, .about_banner_img{
+
+.about-image,
+.about_banner_img {
     border-radius: 15px;
 }
-.about_banner_img{
+
+.about_banner_img {
     margin-top: 80px;
 }
-.theme-color{
+
+.theme-color {
     color: #253B2F !important;
 }
 
-.client-section{
+.client-section {
     background-color: #EEF0E5;
     margin: 80px 0;
     padding: 50px 0;
 }
-.client-wrapper{
+
+.client-wrapper {
     text-align: center;
     padding: 15px;
 }
-.project-overview-image img{
-    border-radius: 20px;
-}
-.project-overview-details{
+
+.project-overview-image img {
     border-radius: 20px;
 }
 
-.project-overview-details h5{
+.project-overview-details {
+    border-radius: 20px;
+}
+
+.project-overview-details h5 {
     font-size: 70px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     opacity: 0.5;
 }
-.our-story-wrapper{
+
+.our-story-wrapper {
     background-color: #EEF0E5;
     padding: 80px 0;
 }
 
-.footer-wedget h4{
+.footer-wedget h4 {
     font-size: 25px;
     margin-bottom: 25px;
 }
-.Subscribe_form input{
+
+.Subscribe_form input {
     width: 100%;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -98,39 +117,51 @@ ul{
     border: none;
 }
 
-.copyright{
+.copyright {
     border-top: 1px solid rgba(37, 59, 47, 0.3);
 }
-.footer-wedget ul.social li a{
+
+.footer-wedget ul.social li a {
     font-size: 25px;
 }
+
 .footer-wedget ul.footer_link li {
     margin-bottom: 10px;
 }
-.footer-wedget ul.footer_link li a{
+
+.footer-wedget ul.footer_link li a {
     text-decoration: none;
 }
-.foot_menu ul li a{
+
+.foot_menu ul li a {
     text-decoration: none;
 }
-.section-footer{
-    border-radius: 30px 30px 0 0 ;
+
+.section-footer {
+    border-radius: 30px 30px 0 0;
 }
-.contact-form input::placeholder, .contact-form textarea::placeholder{
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
     font-size: 18px;
     font-weight: 400;
 }
-.contact-form input, .contact-form textarea{
+
+.contact-form input,
+.contact-form textarea {
     padding: 12px 25px;
 }
-.contact-form input:focus, .contact-form textarea:focus{
+
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: 1px solid #01f3b0;
 }
 
-.connect_me_section{
+.connect_me_section {
     margin-top: 60px;
 }
-.social_btn a{
+
+.social_btn a {
     display: inline-block;
     padding: 20px 60px;
     border-radius: 10px;
@@ -138,22 +169,28 @@ ul{
     text-decoration: none;
     color: #fff;
 }
-.social_btn.facebook a{
+
+.social_btn.facebook a {
     background-color: #3b5998;
 }
-.social_btn.twitter a{
+
+.social_btn.twitter a {
     background-color: #00acee;
 }
-.social_btn.linkedin a{
+
+.social_btn.linkedin a {
     background-color: #0e76a8;
 }
-.social_btn.instagram a{
+
+.social_btn.instagram a {
     background-color: #e4405f;
 }
-.social_btn.telegram a{
+
+.social_btn.telegram a {
     background-color: #0088cc;
 }
-.connect_me_title span{
+
+.connect_me_title span {
     font-size: 100px;
     font-weight: 800;
     color: transparent;
@@ -161,13 +198,16 @@ ul{
     margin-bottom: 40px;
     display: inline-block;
 }
-.contact_box_info span{
+
+.contact_box_info span {
     font-size: 20px;
 }
-.contact_box_info h4{
+
+.contact_box_info h4 {
     font-size: 30px;
 }
-.single_contact_box{
+
+.single_contact_box {
     text-align: center;
     padding: 30px;
     background-color: #fff;
@@ -179,30 +219,33 @@ ul{
     justify-content: center;
     flex-direction: column;
 }
-.contact_box_icon{
+
+.contact_box_icon {
     margin-bottom: 25px;
 }
 
-.overview_cont_2 ul li{
+.overview_cont_2 ul li {
     margin-bottom: 15px;
     list-style: disc;
 }
 
-.overview_cont_2 ul{
+.overview_cont_2 ul {
     padding-left: 10px;
 }
-.bg{
+
+.bg {
     background-color: #EEF0E5;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: #253B2F;
 }
 
-.mt-80n{
+.mt-80n {
     margin-top: -80px;
 }
 
-.bg-dark .text-stroke{
+.bg-dark .text-stroke {
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.315);
 }
 
@@ -216,103 +259,152 @@ ul{
 
 
 
+@media (max-width:1199px) {
+    .offcanvas {
+        background-color: #253B2F;
+    }
+}
 
 
+@media (max-width:919px) {
+    .project-contents .project-info {
+        position: inherit !important;
+        bottom: inherit;
+        width: 100%;
+        left: inherit;
+        border-radius: 0 0 30px 30px
+    }
+
+    .project-contents .project-image img,
+    .project-contents .project-image {
+        border-radius: 30px 30px 0 0
+    }
+
+    .project-carousel-buttons {
+        position: inherit;
+        padding: 0px 10px;
+        margin-top: 15px;
+        justify-content: center;
+        left: inherit;
+    }
+}
 
 
-@media (max-width:767px){
+@media (max-width:767px) {
+
+
     .header-1 .header-bg {
         background: rgb(0 0 0 / 68%);
         padding: 7px;
     }
-    .logo img{
+
+    .logo img {
         width: 80%;
     }
-    .toggler-icon{
+
+    .toggler-icon {
         margin-right: 15px;
     }
 
-    .abt_page_cont h5{
+    .abt_page_cont h5 {
         font-size: 34px;
     }
-    .abt_page_cont p{
+
+    .abt_page_cont p {
         font-size: 15px;
         line-height: 25px;
     }
-    .about-image{
+
+    .about-image {
         margin-top: 0;
     }
-    .project-overview-details{
+
+    .project-overview-details {
         padding: 30px;
     }
+
     .footer-contents {
         padding: 30px;
     }
-    .footer-wedget{
+
+    .footer-wedget {
         margin-bottom: 20px;
     }
-    .foot_menu ul{
+
+    .foot_menu ul {
         justify-content: center;
     }
-    .offcanvas{
-        background-color: #253B2F;
-    }
-    .btn-close{
+
+    .btn-close {
         filter: invert(1);
     }
-    .offcanvas-header{
+
+    .offcanvas-header {
         border-bottom: 1px solid rgb(255 255 255 / 25%);
     }
-    .banner_text_wrapper  h1{
+
+    .banner_text_wrapper h1 {
         font-size: 40px;
     }
-    .top-social-media{
+
+    .top-social-media {
         display: none;
     }
+
     .content-text {
         --bs-content-text-padding: 150px 10px 150px 10px;
     }
-    .project-info h4{
+
+    .project-info h4 {
         font-size: 30px;
     }
-    .project-info h5{
+
+    .project-info h5 {
         font-size: 25px;
         line-height: 35px;
     }
-    .project-contents .project-info{
+
+    .project-contents .project-info {
         padding: 20px 30px;
     }
-    .project-contents .project-info{
-        bottom: -400px;
-    }
-    .project-carousel-buttons{
+
+
+    .project-carousel-buttons {
         padding: 0px 10px;
     }
+
     .contact-form {
         margin-top: 20px;
     }
-    .connect_me_title span{
+
+    .connect_me_title span {
         font-size: 50px;
     }
-    .social_btn a span{
+
+    .social_btn a span {
         display: none;
     }
-    .social_btn a{
+
+    .social_btn a {
         padding: 10px 15px;
     }
-    .connect_me_section  .pt-60{
+
+    .connect_me_section .pt-60 {
         padding-top: 30px;
     }
-    .single_contact_box{
+
+    .single_contact_box {
         margin-bottom: 15px;
         min-height: auto;
     }
-    .contact_box_info h4{
+
+    .contact_box_info h4 {
         font-size: 24px;
     }
-    .contact_box_icon img{
+
+    .contact_box_icon img {
         width: 70px;
     }
-    
-    
+
+
 }
